@@ -18,26 +18,6 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-interface SquareProps {
-  value: number;
-}
-
-class Square extends React.Component<SquareProps, {}> {
-  constructor(props: SquareProps) {
-    super(props);
-    this.state = {
-      value: null,
-    };
-  }
-  render() {
-    return (
-      <button className="square" onClick={() => this.setState({ value: 'X' })}>
-        {this.props.value}
-      </button>
-    );
-  }
-}
-
 class Board extends React.Component {
   renderSquare(i: number) {
     return <Square value={i} />;
