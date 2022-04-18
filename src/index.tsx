@@ -8,7 +8,7 @@ interface SquareProps {
 
 class Square extends React.Component<SquareProps, {}> {
   render() {
-    return <button className="square">{this.props.value}</button>;
+    return <button className="square">{this.props.value}</button>;gasdf
   }
 }
 
